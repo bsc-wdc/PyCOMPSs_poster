@@ -1,0 +1,15 @@
+sphinx
+sphinxcontrib-contentui
+six
+nbsphinx
+sphinx-copybutton
+sphinx-gallery
+sphinxcontrib-svg2pdfconverter
+rst2pdf
+sphinxcontrib-bibtex
+pandoc
+ipywidgets
+sphinx-rtd-theme>=0.5.0rc1
+prompt-toolkit
+ipython
+ipykernel

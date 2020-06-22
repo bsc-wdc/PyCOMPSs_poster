@@ -15,7 +15,7 @@
 
 <p align="center"><b>
     <a href="https://www.bsc.es/research-and-development/software-and-apps/software-list/comp-superscalar/">Website</a>
-    <a href="https://github.com/bsc-wdc/compss/releasess">Releases</a>
+    <a href="https://github.com/bsc-wdc/compss/releases">Releases</a>
     <a href="https://bit.ly/bsc-wdc-community">Slack</a>
 </b></p>
 

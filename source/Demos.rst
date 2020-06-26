@@ -1,6 +1,6 @@
-=======
-· Demos
-=======
+=====
+Demos
+=====
 
 .. nbgallery::
     :caption: Notebook gallery:

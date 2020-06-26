@@ -1,6 +1,6 @@
-======================
-·  PyCOMPSs decorators
-======================
+===================
+PyCOMPSs decorators
+===================
 
 The @task is the basic decorator which is used to identify a method that will become a task at execution time. The directionality of the method parameters are indicated in the @task annotation as "IN" (when the parameter is read, default value), "OUT" (when the parameter is written), or "INOUT" (when the parameter is read and written).
 
@@ -10,7 +10,7 @@ The @task is the basic decorator which is used to identify a method that will be
     def multiply(a, b, c):
 	c += a*b
 
- 
+
 Constraints
 ===========
 
@@ -79,7 +79,6 @@ The two alternative syntaxes are shown below:
 
 .. code-block:: python
 
-    @task(numba='jit')  
+    @task(numba='jit')
     def jit_func(a, b):
         ...
-

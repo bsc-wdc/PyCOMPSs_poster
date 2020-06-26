@@ -1,6 +1,6 @@
-===========
-. Use cases
-===========
+=========
+Use cases
+=========
 
 Example use of constraints: Guidance
 ------------------------------------
@@ -68,7 +68,7 @@ Use case: MPI simulations, analytics and streaming
 
 In this section, we illustrate a sample case where multiple MPI simulations generating data at given steps to be processed by some analytics.
 
-For instance, the graph below shows the case of a pure task-based application that launches a given number of MPI simulations (blue nodes). Each simulation produces output files at different time steps of the simulation (i.e., an output file every iteration of the simulation). The results of these simulations are processed separately (white and red nodes)  and merged to a single resulting output per simulation (pink nodes). 
+For instance, the graph below shows the case of a pure task-based application that launches a given number of MPI simulations (blue nodes). Each simulation produces output files at different time steps of the simulation (i.e., an output file every iteration of the simulation). The results of these simulations are processed separately (white and red nodes)  and merged to a single resulting output per simulation (pink nodes).
 
 
 .. figure:: Figures/streaming_graph1.png
@@ -76,7 +76,7 @@ For instance, the graph below shows the case of a pure task-based application th
     :width: 80.0%
     :align: center
 
-With a regular task-based execution model, the tasks processing the results will need to wait till the end of the simulations. The figure below shows a tracefile of the execution of  a sample application with such behavior. Each line represents a core executing the different tasks. The simulation tasks, although could be run with multiple cores/nodes, in this trace are represented as single core tasks. 
+With a regular task-based execution model, the tasks processing the results will need to wait till the end of the simulations. The figure below shows a tracefile of the execution of  a sample application with such behavior. Each line represents a core executing the different tasks. The simulation tasks, although could be run with multiple cores/nodes, in this trace are represented as single core tasks.
 
 .. figure:: Figures/streaming_trace1.png
     :name: streaming_trace1
@@ -84,14 +84,14 @@ With a regular task-based execution model, the tasks processing the results will
     :align: center
 
 
-In the graph below, we represent the hybrid task-based/data-flow workflow, where the simulation tasks write into a stream. The data is then read by the main program and forward to the process tasks. Another alternative would have been to connect directly the process tasks with the stream, reading directly the results of the simulations. 
+In the graph below, we represent the hybrid task-based/data-flow workflow, where the simulation tasks write into a stream. The data is then read by the main program and forward to the process tasks. Another alternative would have been to connect directly the process tasks with the stream, reading directly the results of the simulations.
 
 .. figure:: Figures/streaming_graph2.png
     :name: streaming_graph2
     :width: 80.0%
     :align: center
 
-The trace below show the improvement obtained by the use of streams, since process tasks do not need to wait until the end of the simulation tasks to start processing the results. This enable the overlapping of the two type of tasks. 
+The trace below show the improvement obtained by the use of streams, since process tasks do not need to wait until the end of the simulation tasks to start processing the results. This enable the overlapping of the two type of tasks.
 
 .. figure:: Figures/streaming_trace2.png
     :name: streaming_trace2
@@ -122,7 +122,3 @@ maximum number of iterations (Max it).
     :name: dislib_exceptions
     :width: 50.0%
     :align: center
-
-
-
-

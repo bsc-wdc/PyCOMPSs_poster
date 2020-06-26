@@ -1,6 +1,6 @@
-==================================
-· PyCOMPSs overview
-==================================
+=================
+PyCOMPSs overview
+=================
 
 PyCOMPSs is a parallel task-based programming model for distributed computing
 platforms. Based on a sequential interface, at execution time the COMPSs runtime
@@ -35,14 +35,13 @@ failure management at task-level and tasks' exception management. 
     :width: 80.0%
     :align: center
 
-PyCOMPSs/COMPSs is not only the programming model and runtime but comes with a set of tools that provides the user with a full environment. The runtime is instrumented with the `Extrae <https://tools.bsc.es/extrae>`__ library (also from BSC) and post-mortem tracefiles of the applications can be generated using an execution flag. These traces can be visualized with the `Paraver <https://tools.bsc.es/paraver>`__ browser, offering a very powerful environment to analyze the performance of the applications. 
+PyCOMPSs/COMPSs is not only the programming model and runtime but comes with a set of tools that provides the user with a full environment. The runtime is instrumented with the `Extrae <https://tools.bsc.es/extrae>`__ library (also from BSC) and post-mortem tracefiles of the applications can be generated using an execution flag. These traces can be visualized with the `Paraver <https://tools.bsc.es/paraver>`__ browser, offering a very powerful environment to analyze the performance of the applications.
 
-Another component is the COMPSs monitor, a web-based application that enables to monitor the execution of the applications. It visualizes the task-graph under execution, the available resources, the workload, etc. 
+Another component is the COMPSs monitor, a web-based application that enables to monitor the execution of the applications. It visualizes the task-graph under execution, the available resources, the workload, etc.
 
-Jupyter notebooks are also integrated with the COMPSs runtime, enabling to run PyCOMPSs notebooks, both in in-house infrastructures or in Binder servers. 
+Jupyter notebooks are also integrated with the COMPSs runtime, enabling to run PyCOMPSs notebooks, both in in-house infrastructures or in Binder servers.
 
 .. figure:: Figures/environment.png
     :name: environemnt
     :width: 80.0%
     :align: center
-

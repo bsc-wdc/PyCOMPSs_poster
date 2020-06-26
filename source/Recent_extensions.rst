@@ -1,6 +1,6 @@
-===================
-· Recent extensions
-===================
+=================
+Recent extensions
+=================
 
 Failure management and exceptions
 =================================
@@ -78,5 +78,3 @@ Science pipelines with different approaches.
         # ...
         while not fds_sensor.is_closed():
             get_and_filter(fds_sensor, filtered)
-
-

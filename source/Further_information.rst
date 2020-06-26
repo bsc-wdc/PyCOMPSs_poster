@@ -1,9 +1,8 @@
-=====================
-· Further information
-=====================
+===================
+Further information
+===================
 
-`Project page <http://www.bsc.es/compss>`__ 
-
+`Project page <http://www.bsc.es/compss>`__
 
 `PyCOMPSs documentation <https://www.bsc.es/research-and-development/software-and-apps/software-list/comp-superscalar/documentation>`__
 
@@ -17,5 +16,6 @@
 
 `PyCOMPSs notebooks <https://github.com/bsc-wdc/notebooks>`__
 
+Contact: `support-compss@bsc.es`_.
 
-
+.. _support-compss@bsc.es: support-compss@bsc.es
